@@ -31,10 +31,6 @@ class Occupancy_grid_pub(Node):
 
         self.grid_publisher_.publish(occupancy_grid_msg)
 
-#above whole callback functn called 2 times a second
-# 1 in array represents definately occupied 
-#0 in array represent not unoccupied 
-# -1 in represents unknown
 
 
 def main(args=None):
@@ -44,9 +40,6 @@ def main(args=None):
     print("Publishing Map")
     rclpy.spin(OG_publisher)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
     OG_publisher.destroy_node()
     rclpy.shutdown()
 
