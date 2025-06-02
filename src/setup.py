@@ -19,10 +19,10 @@ setup(
               ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='sathwik',
-    maintainer_email='sathwik@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='AI SQUAD',
+    maintainer_email='sanaechakrou@gmail.com',
+    description='A ROS 2 package for an autonomous obstacle-avoiding car',
+    license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
